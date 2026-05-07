@@ -1,0 +1,397 @@
+body {
+    font-family: roboto;
+    background-color: rgb(243, 243, 243);
+    margin: 0px;
+}
+
+img {
+    cursor: pointer;
+}
+
+.main {
+    margin-top: 20px;
+    margin-left: 92px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 16px;
+}
+
+@media(min-width: 0px) and (max-width: 600px) {
+    .main {
+        grid-template-columns: 1fr ;
+    }
+}
+@media(min-width: 601px) and (max-width: 900px) {
+    .main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(min-width: 901px) and (max-width:1200px) {
+    .main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media(min-width: 1201px) and (max-width:2000px) {
+    .main {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.video-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 16/9;
+}
+
+.author-image {
+    height: 36px;
+    width: 36px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50px;
+    margin-right: 12px;
+}
+
+.link-title {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
+.link-channel {
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+}
+.line1 {
+    height: px;
+    width: px;
+}
+.line3 {
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+}
+.video-thumbnail-time {
+    position: relative;
+    display: inline-block;
+}
+.video-time {
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 4px;
+    border-radius: 2px;
+    right: 4px;
+    bottom: 10px;
+    position: absolute;
+}
+.section2 {
+    display: flex;
+}
+
+.hamburger-image {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    object-position: center;
+    flex: 0;
+    margin-right: 22px;
+    margin-left: 10px;
+}
+
+
+.youtube-image {
+    height: 20px;
+    width: 90px;
+    margin-right: 66px;
+    flex: 0;
+}
+
+.mychannel-image {
+    height: 32px;
+    width: 32px;
+    margin-right: 20px;
+}
+
+.text-box {
+    color: rgb(18, 18, 18); 
+    height: 36px;
+    border-radius: 2px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192,192,192);
+    padding-left: 13px;
+    font-size: 16px;
+    font-weight: 300;
+    width: 100%;
+    max-width: 350px;
+}
+
+.text-box:focus {
+    outline: none;
+}
+
+.text-box:focus {
+  box-shadow: inset 0 0 0 2px rgb(6, 95, 212);
+}
+
+.button1 {
+    height: 40px;
+    width: 90px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgb(241, 241, 241);
+    margin-left: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.15s;
+}
+
+.button1:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+.button2 {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.15s;
+}
+
+.header-main {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+    height: 70px;
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.5);
+}
+
+.left {
+    margin-left:17px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+    max-width: 450px;
+    flex: 1;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sidebar-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:top;
+    position: fixed;
+    background-color: white;
+    width: 75px;
+    left: 0px;
+    top: 70px;
+    bottom: 0px;
+    z-index: 200;
+}
+
+.sidebar-image {
+    height: 24px;
+    width: 24px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+p {
+    font-size: 10px;
+}
+
+.b1,.b2,.b3,.b4,.b5,.b6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    border-radius: 0px;
+    background-color: white;
+    border: none;
+    padding-top: 18px;
+    padding-bottom: 10px;
+    transition: 0.15s;
+}
+
+
+.b1:hover {
+    background-color: rgb(194, 194, 194);
+}
+
+.b2:hover {
+    background-color: rgb(194, 194, 194);
+}
+
+.b3:hover {
+    background-color: rgb(194, 194, 194);
+}
+
+.b4:hover {
+    background-color: rgb(194, 194, 194);
+}
+
+.b5:hover {
+    background-color: rgb(194, 194, 194);
+}
+
+.b6:hover {
+    background-color: rgb(194, 194, 194);
+}
+
+
+button:active {
+    opacity: 0.7;
+}
+
+.upload-image {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.apps-image {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.notification-image {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.magnifi-image {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.voicesearch-image {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.button1 {
+    position: relative;
+}
+
+.button2 {
+    position: relative;
+}
+
+.button1 .search-tooltip {
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 7px;
+    bottom: -33px;
+    font-size: 13px;
+    border-radius: 3px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.15s;
+}
+
+.button1:hover .search-tooltip {
+    opacity: 0.7;
+}
+
+.button2 .voicesearch-tooltip {
+    position: absolute;
+    background-color: black;
+    width: 150px;
+    color: white;
+    padding: 7px;
+    bottom: -33px;
+    font-size: 13px;
+    border-radius: 3px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.15s;
+}
+
+.button2:hover .voicesearch-tooltip {
+    opacity: 0.7;
+}
+
+.tooltip-button3, .tooltip-button4, .tooltip-button5 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tooltip-button3 .create,.tooltip-button5 .Notifications {
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 7px;
+    bottom: -33px;
+    font-size: 13px;
+    border-radius: 3px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.15s;
+}
+
+.tooltip-button3:hover .create, .tooltip-button4:hover .youtube-apps, .tooltip-button5:hover .Notifications {
+    opacity: 0.7;
+}
+
+.tooltip-button4 .youtube-apps {
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 7px;
+    bottom: -33px;
+    width: 81px;
+    font-size: 13px;
+    border-radius: 3px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.15s;
+}
